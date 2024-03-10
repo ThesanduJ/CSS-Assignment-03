@@ -2,71 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>case-03</title>
+    <title>Title</title>
+    <link rel="stylesheet"href="assets/normalize.css">
     <style>
-        .div01 {
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .div1 {
             position: fixed;
-            top: 0;
-            bottom: 0;
             left: 0;
             right: 0;
-            margin: auto;
-            width: 300px;
-            aspect-ratio: 1/1;
-            border-radius: 100%;
-            border: solid gray 10px;
-            background-color: rgba(178, 144, 133, 0);
-        }
-
-        .div02 {
-            position: fixed;
             top: 0;
             bottom: 0;
-            left: 0;
-            right: 0;
             margin: auto;
-            width: 280px;
+            width: 20vw;
             aspect-ratio: 1/1;
             border-radius: 100%;
-            border: solid #ff0000 10px;
-            background-color: rgba(178, 144, 133, 0);
+            border: solid gray 20px;
         }
-
-        .div03 {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 280px;
-            aspect-ratio: 1/1;
-            border-radius: 100%;
-            background-color: rgb(142, 48, 122);
-        }
-
-        .h{
+        h3{
+            text-align: center;
+            color: white;
             width: fit-content;
             height: fit-content;
-            position: absolute;
-            top: 0;
-            bottom: 0;
             left: 0;
             right: 0;
+            top: 0;
+            bottom: 0;
             margin: auto;
-            color: white;
         }
 
+        .div2 {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: calc(20vw - 15px);
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border: solid red 15px;
+        }
 
+        .div3 {
+            width: calc(20vw - 15px + 15px);
+            aspect-ratio: 1/1;
+            background-color: purple;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .div4 {
+            width: calc(20vw - 15px + 15px);
+            aspect-ratio: 1/1;
+            background-color: rgb(39, 162, 187);
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100vw;
+            /*bottom: 0;*/
+            margin: auto;
+        }
+
+        .div5 {
+            width: calc(20vw - 15px + 15px);
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 200vw;
+            background-color: orangered;
+            margin: auto;
+        }
+
+        .div6 {
+            width: calc(20vw - 15px + 15px);
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 220vw;
+            margin: auto;
+        }
     </style>
 </head>
 <body>
-<div class="div01">
-    <div class="div02">
-        <div class="div03">
-            <h3 class="h">Hello</h3>
-        </div>
-    </div>
+<div class="div3">
+    <h3>Hello</h3>
+</div>
+<div class="div4">
+    <h3>Welcome To</h3>
+</div>
+<div class="div5">
+    <h3>Institute Of Software Engineering</h3>
+</div>
+<div class="div6"></div>
+
+<div class="div1">
+    <div class="div2"></div>
 </div>
 </body>
 </html>
