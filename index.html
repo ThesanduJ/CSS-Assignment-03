@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-03</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 13vh;
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 3em;
+            color: white;
+        }
+
+        #div-group {
+            margin: auto;
+            display: grid;
+            width: 71vw;
+            height: fit-content;
+            grid-template-columns: repeat(6, 1fr);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            column-gap: 62px;
+        }
+
+        #div-group > div {
+            width: 100px;
+            height: 100px;
+            box-shadow: rgb(26, 158, 255) 0px 5px 15px;
+            position: relative;
+            cursor: pointer;
+        }
+        #div-group > div:hover{
+            box-shadow: rgb(26, 158, 255) 0px 50px 100px -20px, rgb(26, 158, 255) 0px 30px 60px -30px, rgb(26, 158, 255) 0px -2px 6px 0px inset;
+        }
+
+        #div-group > div > img {
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        #title {
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            bottom: 28vh;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-size: 2em;
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Assignment-03</h1>
+<div id="div-group">
+    <div id="div-01" onmouseover="div01()" onmouseout="divOut()" onclick="window.location='case-01/index.html'">
+        <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/books.png" alt="books"/>
+    </div>
+    <div id="div-02" onmouseover="div02()" onmouseout="divOut()" onclick="window.location='case-02/index.html'">
+        <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/books.png" alt="books"/>
+    </div>
+    <div id="div-03" onmouseover="div03()" onmouseout="divOut()" onclick="window.location='case-03/index.html'">
+        <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/books.png" alt="books"/>
+    </div>
+    <div id="div-04" onmouseover="div04()" onmouseout="divOut()" onclick="window.location='case-04/index.html'">
+        <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/books.png" alt="books"/>
+    </div>
+    <div id="div-05" onmouseover="div05()" onmouseout="divOut()" onclick="window.location='case-05/index.html'">
+        <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/books.png" alt="books"/>
+    </div>
+    <div id="div-06" onmouseover="div06()" onmouseout="divOut()" onclick="window.location='case-06/index.html'">
+        <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/books.png" alt="books"/>
+    </div>
+</div>
+<h2 id="title"></h2>
+<script>
+    function divOut() {
+        document.getElementById('title').innerHTML = "";
+    }
+    function div01() {
+        document.getElementById('title').innerHTML = "Case-01";
+    }
+
+    function div02() {
+        document.getElementById('title').innerHTML = "Case-02";
+    }
+
+    function div03() {
+        document.getElementById('title').innerHTML = "Case-03";
+    }
+
+    function div04() {
+        document.getElementById('title').innerHTML = "Case-04";
+    }
+
+    function div05() {
+        document.getElementById('title').innerHTML = "Case-05";
+    }
+
+    function div06() {
+        document.getElementById('title').innerHTML = "Case-06";
+    }
+</script>
+</body>
+</html>
